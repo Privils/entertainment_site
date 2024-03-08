@@ -1,0 +1,552 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+  width: 12px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: blueviolet;
+  border-radius: 6px;
+}
+body::-webkit-scrollbar-track:hover {
+  background-color: #ddd; 
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555; 
+}
+/* header styles 
+*/
+nav{
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  padding:  10px;
+  background-color: #2c3e50;
+}
+nav ul{
+float: right;
+margin: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+ nav ul li a{
+  margin-right: 15px;
+  text-decoration: none;
+  color: #fff;
+  padding: auto;
+  position: relative;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+header nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: yellowgreen;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  border-raius: 5px;
+}
+header nav ul li:hover ul {
+  display: block;
+  font-size: 1em;
+}
+
+header nav ul li ul li {
+  padding: 10px;
+}
+
+header nav ul li ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul li ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+header nav ul li a:hover{
+  cursor: pointer;
+}
+header nav ul li a::after{
+  content: '';
+  position: absolute;
+  background-color: blue;
+  height: 3px;
+  left: 0;
+  width: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+header nav ul li a:hover::after{
+  width: 100%;
+
+}
+header nav ul li{
+  list-style: none;
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+.logo{
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 2.5em;
+  background-image: linear-gradient(to right, yellow, red); 
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent;
+}
+.logo span{
+  opacity: 0;
+  transform: rotate(-180deg) translate(150px, 0);
+  animation:  animate 3s forwards;
+  display: inline-block;
+  background-image: linear-gradient(to right, yellow, red);
+  border-radius: 5px;
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent;
+}
+.logo span:nth-of-type(1){
+  animation-delay: 1s;
+}
+.logo span:nth-of-type(2){
+  animation-delay: 2s;
+}.logo span:nth-of-type(3){
+  animation-delay: 3s;
+}.logo span:nth-of-type(4){
+  animation-delay: 4s;
+}.logo span:nth-of-type(5){
+  animation-delay: 5s;
+}.logo span:nth-of-type(6){
+  animation-delay: 6s;
+}.logo span:nth-of-type(7){
+  animation-delay: 7s;
+}.logo span:nth-of-type(8){
+  animation-delay: 8s;
+}.logo span:nth-of-type(9){
+  animation-delay: 9s;
+}.logo span:nth-of-type(10){
+  animation-delay: 10s;
+}.logo span:nth-of-type(11){
+  animation-delay: 11s;
+}.logo span:nth-of-type(12){
+  animation-delay: 12s;
+}.logo span:nth-of-type(13){
+  animation-delay: 13s;
+}.logo span:nth-of-type(14){
+  animation-delay: 14s;
+}.logo span:nth-of-type(15){
+  animation-delay: 15s;
+}
+@keyframes animate {
+  30%{
+    transform: translate(0, -50px) rotate(180deg) scale(1);
+  }
+  50%{
+    transform: translate(0, 20px) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  80%{
+    transform: translate(-100px, -100px) rotate(-180deg) scale(1);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+.main {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  position: relative; 
+  background-image: url('./components/images/img2.wallspic.com-film-illustration-fiction-animation-dragon-5465x3074.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+
+iframe{
+  margin-left: 10px;
+  padding: 7px;
+}
+.videoName{
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+.trailorTitle{
+  text-transform: capitalize;
+  font-size: 1.5em;
+  background-color: rgb(24, 76, 190);
+  padding: 5px;
+  margin-left: 5px;
+  border-radius: 7px;
+}  
+.firstContent{
+  margin: 10px;
+  color: white;
+  font-weight: bolder;
+  background-image: linear-gradient(to right, black, red); 
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+}
+.firstContent::before{
+  content: "Welcome to Privils Movie Hub – your ultimate destination for unparalleled entertainment and absolute satisfaction!";
+ font-size: 3em;
+  animation: animate 5s ease 2;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(23, 18, 18, 0.2);
+  width: auto;
+  color: white;
+}
+.input{
+  width: 800px;
+  height: auto;
+  align-items: center;
+  padding: 10px;
+  margin-right: 3px;
+  font-size: 1.2em;
+  position: relative;
+  background-color: transparent;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+}
+form i{
+  font-size: 2em;
+  margin-left: 10px;
+  padding: 1px;
+  align-items: center;
+}
+form i:hover{
+transition: 1s;
+cursor: pointer;
+background-color: rgba(0, 0, 0, 0.6);
+}
+/* home styles */
+.trendinMovies_container{
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+.home{
+  position: relative;
+  width: 300px;
+  min-width: 200px;
+  height: 300px;
+  margin: 10px;
+}
+.movieInfo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.ratingCircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2ecc71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rating {
+  margin: 0;
+}
+
+.red {
+  background-color: #e74c3c;
+}
+
+.orange {
+  background-color: #f39c12;
+}
+
+.green {
+  background-color: #2ecc71;
+}
+img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.movie_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trendingMovies{
+  width: 100%;
+  height: auto;
+}
+
+.trendinMovies_container::-webkit-scrollbar{
+  width: 0;
+}
+
+.trending_name{
+  text-transform: capitalize;
+  font-size: 2em;
+  font-weight: 400;
+  width: fit-content;
+  padding: 5px;
+  background-color: rgba(64, 7, 28);
+  color: white;
+  border-radius: 0  5px  5px 0;
+  margin-top: 5px;
+}
+.movies{
+  position: relative;
+  margin: 5px;
+  width: 180px;
+height: 280px;
+border-radius: 10px;
+position: relative;
+background-color: gray;
+}
+.movie_name{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+font-weight: 200;
+font-size: 1.2em;
+text-align: center;
+background-color: #2c3e50;
+margin-bottom: 2px;
+border-radius: 0  9px  9px 0;
+color: white;
+padding: 3px;
+}
+.footer {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+/*moviePage styles */
+.movies_title{
+  font-size: 2.5em;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-left: 10px;
+}
+.genres{
+  font-size: 1.2em;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-align: center;
+  width: 270px;
+  border: 2px solid gray;
+
+}
+#genreBtn{
+  width: fit-content;
+text-align: center;
+text-transform: capitalize;
+padding: 5px;
+margin: 10px;
+border-top-right-radius: 6px;
+background-color: white;
+border-bottom-right-radius: 6px;
+border: 1px solid gray;
+box-shadow: 3px 3px 5px gray;
+}
+.overview{
+  display: none;
+}
+#genreBtn:hover{
+cursor: pointer;
+transition: 1s;
+box-shadow: 3px 3px gray;
+border-top: none;
+border-left: none;
+border-right: 2px;
+border-bottom: 2px;
+}
+.item_container{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.error{
+  font-size: 1.9em;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+  background-image: linear-gradient(to right, black, green);
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-background-clip: text; 
+  background-clip: text;
+  color: transparent;
+  display: flex;
+  flex-grow: wrap;
+}
+.container_section{
+  width: 100%;
+  height: max-content;
+}
+.loadmore{
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  place-content: center;
+}
+.load_more_btn{
+  width: 60%;
+  height: fit-content;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 2em;
+  padding: 10px;
+  font-weight: 700;
+  background-color: rgb(3, 198, 3);
+  border: 1px solid yellowgreen;
+  box-shadow: 5px 5px 5px gray;
+}
+.results_container{
+  width: 1000px;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.resultscontainer{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.new_ratings{
+  width: 70px;
+  height: auto;
+font-weight: 500;
+font-size: 1.6em;
+text-align: center;
+background-color: #2c3e50;
+border-radius: 0  9px  5px 0;
+color: white;
+padding: 3px;
+}
+.releaseDate{
+font-size: 1em;
+background-color: #2c3e50;
+color: white;
+padding: 3px;
+}
+/*pop up*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

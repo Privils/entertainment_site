@@ -1,0 +1,167 @@
+@media (max-width: 768px) {
+    .logo{
+      font-size: 20px;
+    }
+      .checkbtn{
+        display: block;
+      }
+      nav{
+        position: relative;
+      }
+      ul{
+        position: absolute;
+        width: 70%;
+        height: fit-content;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+      }
+      nav ul li{
+        display: block;
+      }
+      nav ul li a{
+        font-size: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+      }
+      a:hover, a.active{
+        background: none;
+        color: #0082e6;
+      }
+      #check:checked ~ ul {
+        left: 0;
+      }
+      .movies{
+        width: 170px;
+      }
+      .load_more_btn{
+        font-size: 1.5em;
+        padding: 10px;
+        font-weight: 700;
+    
+      }
+      #homeMovies{
+          position: relative;
+          margin: 5px;
+          width: 180px;
+        height: 280px;
+        border-radius: 10px;
+        position: relative;
+        background-color: gray;
+      }
+      .firstContent::before{
+        content: "Welcome to Privils Movie Hub – your ultimate destination for unparalleled entertainment and absolute satisfaction!";
+       font-size: 2em;
+      }
+    }
+  @media (max-width: 425px) {
+    .logo{
+      font-size: 20px;
+    }
+    .checkbtn{
+      font-size: 1em;
+    }
+    nav ul li a{
+      font-size: 1em;
+    }
+    ul{
+      width: 60%;
+      top: 70px;
+    }
+    .main{
+      height: 240px;
+    }
+    
+    .trending_name{
+      font-size: 1.2em;
+    }
+    .movies{
+      height: 250px;
+    }
+    .movies{
+      width: 100px;
+    }
+    .load_more_btn{
+      font-size: 1.2em;
+      padding: 10px;
+      font-weight: 700;
+  
+    }
+    .ratingCircle {
+      width: 29px;
+      height: 29px;
+      margin-bottom: 6px;
+      font-size: x-small;
+    }
+    .releaseDate{
+      font-size: x-small;
+    }
+    .movie_name{
+      margin-top: 5px;
+    font-size: x-small;
+    padding: 2px;
+    }
+    .item_container{
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .genres{
+      font-size: 1em;
+      width: 100%;
+      border: 2px solid gray;
+    
+    }
+    #genreBtn{
+    padding: 5px;
+    margin: 5px;
+    }
+    .resultscontainer{
+      width: 100%;
+      height: max-content;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .movies{
+      width: 100px;
+      margin: 5px;
+    height: 140px;
+    display: flex;
+    }
+    .forOverview{
+      display: flex;
+      justify-content: space-between;
+      
+    }
+    .overview{
+      position: relative;
+      display: block;
+      width: 100%;
+      margin-left: 0;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  .overview::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.5);
+  }
+  #movies{
+    width: 100px;
+    margin: 3px;
+  }
+  .firstContent::before{
+    content: "Welcome to Privils Movie Hub – your ultimate destination for unparalleled entertainment and absolute satisfaction!";
+   font-size: 1em;
+  }
+    }
