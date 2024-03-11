@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/entertainment_site/static/css/main.b8d46a32.css",
+    "main.js": "/entertainment_site/static/js/main.3020f451.js",
+    "static/js/453.15010aa8.chunk.js": "/entertainment_site/static/js/453.15010aa8.chunk.js",
+    "static/media/img2.wallspic.com-film-illustration-fiction-animation-dragon-5465x3074.jpg": "/entertainment_site/static/media/img2.wallspic.com-film-illustration-fiction-animation-dragon-5465x3074.c424f6cdd660887bf19c.jpg",
+    "index.html": "/entertainment_site/index.html",
+    "main.b8d46a32.css.map": "/entertainment_site/static/css/main.b8d46a32.css.map",
+    "main.3020f451.js.map": "/entertainment_site/static/js/main.3020f451.js.map",
+    "453.15010aa8.chunk.js.map": "/entertainment_site/static/js/453.15010aa8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8d46a32.css",
+    "static/js/main.3020f451.js"
+  ]
+}
