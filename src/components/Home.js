@@ -7,8 +7,8 @@ const Home = () => {
   const [trending_movies, setTrending_Movies] = useState([]);
   const [trending_shows, setTrending_shows] = useState([]);
   const [trendingAnime, setTrendingAnime] = useState([]);
-  const url = "http://localhost:3030/movies/top_trending/api_data";
-  const trending_url = 'http://localhost:3030/watch/tv/shows/all/shows/api_data';
+  const url = "https://entertainment-site-1.onrender.com/movies/top_trending/api_data";
+  const trending_url = 'https://entertainment-site-1.onrender.com/watch/tv/shows/all/shows/api_data';
    const image_url = 'https://image.tmdb.org/t/p/w500/';
 const mainContainer = document.querySelector('.main');
  

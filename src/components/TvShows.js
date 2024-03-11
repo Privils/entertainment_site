@@ -14,7 +14,7 @@ const TvShows = () => {
   }, []);
   //tv shows data
   async function getTvShowsData() {
-    const tvUrl = "http://localhost:3030/watch/tv/shows/all/shows/api_data";
+    const tvUrl = "https://entertainment-site-1.onrender.com/watch/tv/shows/all/shows/api_data";
     try {
       const response = await fetch(tvUrl);
       if (!response.ok) {
@@ -29,7 +29,7 @@ const TvShows = () => {
   }
   //genre data
   const getGenre = async () => {
-    const genreUrl = "http://localhost:3030/data/genre/api_data";
+    const genreUrl = "https://entertainment-site-1.onrender.com/data/genre/api_data";
     try {
       const res = await fetch(genreUrl);
       if (!res.ok) {

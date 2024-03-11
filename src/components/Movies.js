@@ -19,7 +19,7 @@ const Movies = ({ listType }) => {
   const fetchMovies = async () => {
     try {
       const response = await fetch(
-        "http://localhost:3030/movie/list/moviedata/api_data"
+        "https://entertainment-site-1.onrender.com/movie/list/moviedata/api_data"
       );
       if (!response.ok) {
         throw new Error("Failed to fetch data");
@@ -33,7 +33,7 @@ const Movies = ({ listType }) => {
   };
 
   const getGenre = async () => {
-    const genreUrl = "http://localhost:3030/data/genre/api_data";
+    const genreUrl = "https://entertainment-site-1.onrender.com/data/genre/api_data";
     try {
       const res = await fetch(genreUrl);
       if (!res.ok) {

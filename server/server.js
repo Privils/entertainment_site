@@ -13,8 +13,8 @@ app.use('/movies/top_trending', movieRouter);
 app.use('/watch/tv/shows', trendingTvShowsRouter);
 app.use('/movie/list', movieListRouter);
 app.use('/data', genreDataRouter);
-
-app.listen(3030, '0.0.0.0', () => {
+const PORT = process.env.PORT || 3030;
+app.listen(PORT, '0.0.0.0', () => {
     console.log('Listening on port 3030');
 });
 
